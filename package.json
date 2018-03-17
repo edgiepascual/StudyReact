@@ -2,7 +2,7 @@
   "name": "studyreact",
   "version": "1.0.0",
   "description": "My study in react JS",
-  "main": "index.js",
+  "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,5 +20,13 @@
   "bugs": {
     "url": "https://github.com/edgiepascual/StudyReact/issues"
   },
-  "homepage": "https://github.com/edgiepascual/StudyReact#readme"
+  "homepage": "https://github.com/edgiepascual/StudyReact#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^4.1.1"
+  }
 }
