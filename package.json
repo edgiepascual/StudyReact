@@ -1,0 +1,24 @@
+{
+  "name": "studyreact",
+  "version": "1.0.0",
+  "description": "My study in react JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edgiepascual/StudyReact.git"
+  },
+  "keywords": [
+    "react",
+    "JS",
+    "study"
+  ],
+  "author": "Edgie B. Pascual",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edgiepascual/StudyReact/issues"
+  },
+  "homepage": "https://github.com/edgiepascual/StudyReact#readme"
+}
