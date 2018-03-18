@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-export default class Home extends Component {
-   render() {
+const Home = () => {
       return (
          <div>
-            App Component is Rendered!!
+            Yes! It finally worked sad Life!!! :)
          </div>
       );
-   }
 }
+
+export default Home;
