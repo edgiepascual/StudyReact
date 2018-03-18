@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
-import Home from "./containers/home/index";
+import Home from "./containers/home";
 
 render(<Home />, document.getElementById('app')); 
 
