@@ -2,8 +2,10 @@
   "name": "studyreact",
   "version": "1.0.0",
   "description": "My study in react JS",
-  "main": "webpack.config.js",
+  "main": "index.js",
   "scripts": {
+    "start": "./node_modules/.bin/webpack-dev-server --mode development",
+    "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,12 +23,23 @@
     "url": "https://github.com/edgiepascual/StudyReact/issues"
   },
   "homepage": "https://github.com/edgiepascual/StudyReact#readme",
-  "dependencies": {},
+  "dependencies": {
+    "babel-plugin-react-html-attrs": "^2.1.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-stage-0": "^6.24.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.0.6",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "webpack-cli": "^2.0.12"
+  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
-    "webpack": "^4.1.1"
+    "webpack": "^4.1.1",
+    "webpack-dev-server": "^3.1.1"
   }
 }
