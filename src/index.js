@@ -1,19 +1,15 @@
 import React, { Component } from "react";
+
 import { render } from "react-dom";
-import Home from "./containers/home";
+import { Provider } from "react-redux";
+import { createStore } from "redux";
+import { ConnectedRouter } from 'connected-react-router';
 
-render(<Home />, document.getElementById('app')); 
+import App from "./containers/App";
+import store, { history } from "./providerStore";
 
-/*const App = () => {
-  return (
-    <div>
-      <p>React here!</p>
-    </div>
-  );
-};
-
-export default App;
-
-ReactDOM.render(<App />, document.getElementById("app"));
-
-//https://github.com/valentinogagliardi/webpack-4-quickstart*/
+render(<Provider store={ store }>
+		<ConnectedRouter history={history}> 
+			<App /> 
+		</ConnectedRouter>
+	   </Provider>, document.getElementById('app')); 
