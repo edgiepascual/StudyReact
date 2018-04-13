@@ -1,0 +1,2 @@
+- Learn how to create components with Looping/navigation/click event/updating of css status
+- Learn how to grid view

@@ -4,23 +4,23 @@ import { Switch, Route } from 'react-router-dom';
 
 import Home from '../Home';
 import NotFound from '../NotFound';
+import { HomeHeader } from '../../components/Header';
 
-const App = () => {
+export default function App(){
   return (
   	<div>
   		<Helmet
   			titleTemplate="%s - Website"
   			defaultTtitle="Website">
   			<meta name="description" content="Website"/> 
-		</Helmet>
+		  </Helmet>
+      <HomeHeader /> 
 	    <div>
 	      <Switch>
-	        <Route exact path="/" component={Home} />
-	        <Route path="*" component={NotFound} />
-	      </Switch> 
+	        <Route exact path="/" component={Home} /> 
+	        <Route component={NotFound} /> 
+	      </Switch>   
 	    </div> 
     </div>
   );
 }
-
-export default App;

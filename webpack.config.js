@@ -5,7 +5,7 @@ const path = require('path');
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'src'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'main.js' //file name created when loading in dev mode
   },
   module: {
@@ -34,10 +34,24 @@ module.exports = {
             options: { minimize: true }
           }
         ]
+      },
+      {
+        test: /\.css$/,
+        use: [
+          { loader: "style-loader" },
+          { loader: "css-loader" }
+        ]
       }
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({template: './public/index.html'})
-  ]
+  ],
+  devtool: 'source-map', //generate source map
+  devServer: {
+    historyApiFallback: true,
+    inline: true,
+    hot: true,
+    contentBase: './public' 
+  }
 };
